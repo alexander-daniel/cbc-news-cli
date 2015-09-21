@@ -1,0 +1,25 @@
+{
+    "general": {
+        "topstories": "http://rss.cbc.ca/lineup/topstories.xml",
+        "world": "http://rss.cbc.ca/lineup/world.xml",
+        "canada": "http://rss.cbc.ca/lineup/canada.xml",
+        "politics": "http://rss.cbc.ca/lineup/politics.xml",
+        "business": "http://rss.cbc.ca/lineup/business.xml",
+        "health": "http://rss.cbc.ca/lineup/health.xml",
+        "arts": "http://rss.cbc.ca/lineup/arts.xml",
+        "technology": "http://rss.cbc.ca/lineup/technology.xml",
+        "offbeat": "http://rss.cbc.ca/lineup/offbeat.xml",
+        "aboriginal": "http://www.cbc.ca/cmlink/rss-cbcaboriginal"
+    },
+    "sports": {
+        "topstories": "http://rss.cbc.ca/lineup/sports.xml",
+        "mlb": "http://rss.cbc.ca/lineup/sports-mlb.xml",
+        "nba": "http://rss.cbc.ca/lineup/sports-nba.xml",
+        "curling": "http://rss.cbc.ca/lineup/sports-curling.xml",
+        "cfl": "http://rss.cbc.ca/lineup/sports-cfl.xml",
+        "nfl": "http://rss.cbc.ca/lineup/sports-nfl.xml",
+        "nhl": "http://rss.cbc.ca/lineup/sports-nhl.xml",
+        "soccer": "http://rss.cbc.ca/lineup/sports-soccer.xml",
+        "figureskating": "http://rss.cbc.ca/lineup/sports-figureskating.xml"
+    }
+}

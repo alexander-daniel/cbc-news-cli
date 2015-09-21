@@ -1,0 +1,17 @@
+{
+  "name": "cbc-news",
+  "version": "0.0.1",
+  "description": "grab the latest news from the CBC",
+  "main": "cmd.js",
+  "bin": {
+      "cbc": "./cmd.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexander Vados <alex.vados@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.8.1"
+  }
+}
