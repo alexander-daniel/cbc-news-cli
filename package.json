@@ -1,10 +1,10 @@
 {
   "name": "cbc-news",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "grab the latest news from the CBC",
   "main": "cmd.js",
   "bin": {
-      "cbc": "./cmd.js"
+    "cbc": "./cmd.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
