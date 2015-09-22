@@ -15,16 +15,16 @@ var openBrowserCmd = require('./lib/getOpenCommand')();
 var i = 1;
 var posts = [];
 
-const rssFeeds = require('./lib/cbcFeeds.json');
+var rssFeeds = require('./lib/cbcFeeds.json');
 
 function listOptions () {
 
-    ['General', 'Sports'].forEach(sectionName => {
+    ['General', 'Sports'].forEach(function (sectionName) {
         console.log(sectionName.green);
 
         var sectionKeys = Object.keys(rssFeeds[sectionName.toLowerCase()]);
 
-        sectionKeys.forEach(sectionKey => {
+        sectionKeys.forEach(function(sectionKey) {
             console.log('- ' + sectionKey);
         });
     });
@@ -47,12 +47,14 @@ function promptForPost() {
         }
     };
 
-    prompt.get(schema, (err, result) => {
+    prompt.get(schema, function (err, result) {
         if (result.post !== '0') {
             var i = parseInt(result.post, 10);
 
             if(isNaN(i) || i > posts.length || i < 1) console.log('Invalid post number');
-            else exec(openBrowserCmd + posts[i - 1].link, err => { if (err) throw new Error(err); });
+            else exec(openBrowserCmd + posts[i - 1].link, function (err) {
+                if (err) throw new Error(err);
+            });
             promptForPost();
         }
     });
@@ -68,7 +70,9 @@ function scrapeRSS() {
     var title = 'CBC News - ' + capitalize(program.section) + ' - ' + capitalize(categoryName);
     console.log(title.toString().green);
 
-    feedStream.on('error', error => console.log('An error occured', error));
+    feedStream.on('error', function (error) {
+        console.log('An error occured', error);
+    });
 
     feedStream.on('readable', function () {
         var stream = this, item;
