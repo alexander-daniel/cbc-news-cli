@@ -1,6 +1,6 @@
 {
   "name": "cbc-news",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "grab the latest news from the CBC",
   "main": "cmd.js",
   "bin": {
